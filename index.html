@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tavpreet Kaur | Fine Arts Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: "#7c3aed",
+            accent: "#facc15",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans scroll-smooth">
+
+  <!-- Hero Section with Typewriter -->
+  <section class="relative min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-white text-center px-4" style="background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');">
+    <div class="bg-black bg-opacity-60 p-8 rounded-lg">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Tavpreet Kaur</h1>
+      <span id="typed-text" class="text-xl md:text-2xl font-medium"></span>
+    </div>
+    <div class="absolute bottom-10 animate-bounce text-white text-sm">Scroll ↓</div>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="bg-primary text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Tavpreet Kaur</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#profile" class="hover:text-accent">Profile</a></li>
+        <li><a href="#skills" class="hover:text-accent">Skills</a></li>
+        <li><a href="#education" class="hover:text-accent">Education</a></li>
+        <li><a href="#achievements" class="hover:text-accent">Achievements</a></li>
+        <li><a href="#gallery" class="hover:text-accent">Gallery</a></li>
+        <li><a href="#contact" class="hover:text-accent">Contact</a></li>
+        <li><button onclick="toggleDarkMode()" class="hover:text-accent">🌓</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Profile -->
+  <section id="profile" class="max-w-5xl mx-auto p-6" data-aos="fade-up">
+    <h3 class="text-2xl font-semibold mb-4">Profile</h3>
+    <p>Dedicated student and enthusiastic volunteer with a passion for fine arts. Skilled in painting, video editing, and collaborative teamwork. Motivated to learn and adopt upcoming tools and techniques in the art world.</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-50 dark:bg-gray-800 py-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto p-6">
+      <h3 class="text-2xl font-semibold mb-6">Soft & Hard Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="glass p-4">🎥 Video Editing</div>
+        <div class="glass p-4">🎨 Painting & Drawing</div>
+        <div class="glass p-4">🤝 Collaboration</div>
+        <div class="glass p-4">💡 Creativity</div>
+        <div class="glass p-4">⏱ Time Management</div>
+        <div class="glass p-4">🖥 Computer Skills</div>
+        <div class="glass p-4">📊 Presentation Skills</div>
+        <div class="glass p-4">👥 Teamwork</div>
+        <div class="glass p-4">🧠 Problem Solving</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="max-w-5xl mx-auto p-6" data-aos="fade-up">
+    <h3 class="text-2xl font-semibold mb-4">Education</h3>
+    <ul class="space-y-4">
+      <li><strong>B.A. Punjabi Honours</strong> – Gopi Chand Arya Mahila College (2020–2023) – 86%</li>
+      <li><strong>12th - PSEB</strong> – Maya Devi Memorial Adarsh School (2018–2019) – 96%</li>
+      <li><strong>10th - PSEB</strong> – Maya Devi Memorial Adarsh School (2016–2017) – 86%</li>
+    </ul>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="bg-gray-50 dark:bg-gray-800 py-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto p-6">
+      <h3 class="text-2xl font-semibold mb-4">Achievements</h3>
+      <ul class="list-disc ml-6 space-y-2">
+        <li>2nd in still life drawing - PU Youth Festival</li>
+        <li>Poster making participant – PU Zonal Youth Festival</li>
+        <li>1st & 3rd in Talent Hunt Competitions</li>
+        <li>Medal in Online Creative Design Competition</li>
+        <li>15th rank in Punjab Senior Secondary Merit List</li>
+        <li>Yoga: 3rd place at state level; U-14, U-17 participant</li>
+        <li>Leader in Fine Arts stall; Teacher at workshops</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+<section id="gallery" class="max-w-6xl mx-auto p-6" data-aos="fade-up">
+  <h3 class="text-2xl font-semibold mb-4">Artwork Gallery</h3>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <img src="1st image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
+    <img src="2nd image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
+    <img src="3rd image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-5xl mx-auto p-6" data-aos="fade-up">
+    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <p><strong>Email:</strong> <a href="mailto:tavpreetkaur2001@gmail.com" class="text-primary underline">tavpreetkaur2001@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+917973974568" class="text-primary underline">+91 79739 74568</a></p>
+        <p><strong>Location:</strong> Guru Kirpa Colony, Abohar</p>
+        <button onclick="window.print()" class="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-purple-700">Download PDF</button>
+      </div>
+      <div class="flex gap-4 items-center">
+        <a href="#" class="text-2xl hover:text-accent">📸 Instagram</a>
+        <a href="#" class="text-2xl hover:text-accent">🎨 Behance</a>
+        <a href="#" class="text-2xl hover:text-accent">📍 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-4 mt-8">
+    <p>&copy; 2025 Tavpreet Kaur | Fine Arts Portfolio</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    AOS.init();
+
+    new Typed("#typed-text", {
+      strings: ["Fine Artist", "Creative Mind", "Volunteer & Teacher"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+
+</body>
+</html>
