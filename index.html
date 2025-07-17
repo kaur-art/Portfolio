@@ -43,26 +43,30 @@
       transform: translateY(-5px);
       color: #facc15; /* accent color on hover */
     }
+    .flex-space-x-4{
+
+    }
   </style>
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans scroll-smooth">
 
   <!-- Hero Section with Typewriter -->
-  <section class="relative min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-white text-center px-4"
-    style="background-image: url('https://plus.unsplash.com/premium_photo-1661775756810-82dbd209fc95?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');">
-    <div class="bg-black bg-opacity-60 p-8 rounded-lg">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Tavpreet Kaur</h1>
-      <span id="typed-text" class="text-xl md:text-2xl font-medium"></span>
-    </div>
-    <div class="absolute bottom-10 animate-bounce text-white text-sm">Scroll ↓</div>
-  </section>
+ <section class="relative min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-white text-center px-4"
+  style="background-image: url('https://plus.unsplash.com/premium_photo-1661775756810-82dbd209fc95?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D'); background-position: right;">
+  <div class="bg-black bg-opacity-60 p-8 rounded-lg">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Tavpreet Kaur</h1>
+    <span id="typed-text" class="text-xl md:text-2xl font-medium"></span>
+  </div>
+  <div class="absolute bottom-10 animate-bounce text-white text-sm">Scroll ↓</div>
+</section>
+
 
   <!-- Navbar -->
   <nav class="bg-primary text-white sticky top-0 z-50 shadow-md">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center p-4 gap-4">
       <h1 class="text-xl font-bold">Tavpreet Kaur</h1>
-      <ul class="flex space-x-4">
+      <ul class="flex flex-wrap gap-4 justify-center md:justify-end">
         <li><a href="#profile" class="hover:text-accent">Profile</a></li>
         <li><a href="#skills" class="hover:text-accent">Skills</a></li>
         <li><a href="#education" class="hover:text-accent">Education</a></li>
