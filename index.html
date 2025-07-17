@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- ✅ Font Awesome CDN for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -29,13 +33,24 @@
       backdrop-filter: blur(10px);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
+
+    /* ✅ Icon Hover Effect */
+    .social-icon {
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-icon:hover {
+      transform: translateY(-5px);
+      color: #facc15; /* accent color on hover */
+    }
   </style>
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans scroll-smooth">
 
   <!-- Hero Section with Typewriter -->
-  <section class="relative min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-white text-center px-4" style="background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');">
+  <section class="relative min-h-screen flex flex-col justify-center items-center bg-cover bg-center text-white text-center px-4"
+    style="background-image: url('https://plus.unsplash.com/premium_photo-1661775756810-82dbd209fc95?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D');">
     <div class="bg-black bg-opacity-60 p-8 rounded-lg">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">Tavpreet Kaur</h1>
       <span id="typed-text" class="text-xl md:text-2xl font-medium"></span>
@@ -62,7 +77,8 @@
   <!-- Profile -->
   <section id="profile" class="max-w-5xl mx-auto p-6" data-aos="fade-up">
     <h3 class="text-2xl font-semibold mb-4">Profile</h3>
-    <p>Dedicated student and enthusiastic volunteer with a passion for fine arts. Skilled in painting, video editing, and collaborative teamwork. Motivated to learn and adopt upcoming tools and techniques in the art world.</p>
+    <p>Dedicated student and enthusiastic volunteer with a passion for fine arts. Skilled in painting, video editing,
+      and collaborative teamwork. Motivated to learn and adopt upcoming tools and techniques in the art world.</p>
   </section>
 
   <!-- Skills -->
@@ -110,29 +126,33 @@
   </section>
 
   <!-- Gallery -->
-<section id="gallery" class="max-w-6xl mx-auto p-6" data-aos="fade-up">
-  <h3 class="text-2xl font-semibold mb-4">Artwork Gallery</h3>
-  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-    <img src="1st image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
-    <img src="2nd image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
-    <img src="3rd image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
-  </div>
-</section>
-
+  <section id="gallery" class="max-w-6xl mx-auto p-6" data-aos="fade-up">
+    <h3 class="text-2xl font-semibold mb-4">Artwork Gallery</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="1st image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
+      <img src="2nd image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
+      <img src="3rd image.jpg" class="rounded shadow-md hover:scale-105 transition object-cover h-80 w-full" />
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="max-w-5xl mx-auto p-6" data-aos="fade-up">
     <h3 class="text-2xl font-semibold mb-4">Contact</h3>
     <div class="grid md:grid-cols-2 gap-6">
       <div>
-        <p><strong>Email:</strong> <a href="mailto:tavpreetkaur2001@gmail.com" class="text-primary underline">tavpreetkaur2001@gmail.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:tavpreetkaur2001@gmail.com"
+            class="text-primary underline">tavpreetkaur2001@gmail.com</a></p>
         <p><strong>Phone:</strong> <a href="tel:+917973974568" class="text-primary underline">+91 79739 74568</a></p>
         <p><strong>Location:</strong> Guru Kirpa Colony, Abohar</p>
-        <button onclick="window.print()" class="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-purple-700">Download PDF</button>
+        <button onclick="window.print()"
+          class="mt-4 bg-primary text-white px-4 py-2 rounded hover:bg-purple-700">Download PDF</button>
       </div>
-      <div class="flex gap-4 items-center">
-        <a href="https://www.instagram.com/kaurart20?utm_source=qr&igsh=MTY0Z2Vpb25qZG5odg==" class="text-2xl hover:text-accent">📸 Instagram</a>
-        <a href="https://github.com/kaur-art/Portfolio" class="text-2xl hover:text-accent">🐱 Github</a>
+
+      <!-- ✅ Social Icons -->
+      <div class="flex gap-6 items-center text-3xl">
+        <a href="https://instagram.com/yourusername" target="_blank" class="social-icon"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
       </div>
     </div>
   </section>
